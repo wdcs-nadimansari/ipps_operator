@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ivprofile"
+            android:layout_width="@dimen/_96sdp"
+            android:layout_height="@dimen/_96sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@drawable/joborder"
+            app:civ_shadow_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_toEndOf="@id/ivprofile"
+            android:fontFamily="@font/lato_bold"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvusername"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@id/ivprofile"
+            android:fontFamily="@font/lato_medium"
+            android:text="@string/edit_profile"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/close" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_0.5sdp"
+            android:layout_below="@id/ivprofile"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>
